@@ -21,4 +21,12 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - assets/
+    - assets/Car.png
+    - assets/View 1.png
+    - assets/View 2.png
+    - assets/View 3.png
+    - assets/View 5.png
+    - assets/View 6.png
+    - assets/normal.png
     - assets/vip.png
