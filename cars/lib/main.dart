@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
-import 'vip_car_listing_page.dart';
-import 'normal_car_listing_page.dart';
+import 'pages/vip_car_listing_page.dart';
+import 'pages/normal_car_listing_page.dart';
+import 'pages/login_page.dart';
+import 'pages/home.dart';
+import 'pages/vip_home.dart';
+import 'pages/visit_requests_screen.dart';
+import 'pages/payment_status_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,13 +21,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const NavigationHomePage(),
     );
   }
 }
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class NavigationHomePage extends StatelessWidget {
+  const NavigationHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -52,6 +57,56 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text('Normal Car Listing'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const VisitRequestsScreen()),
+                );
+              },
+              child: const Text('Visit Requests'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const PaymentStatusScreen()),
+                );
+              },
+              child: const Text('Payment Status'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const LoginPage()),
+                );
+              },
+              child: const Text('Login'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const HomePage()),
+                );
+              },
+              child: const Text('Home'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const VIPhome()),
+                );
+              },
+              child: const Text('VIP Home'),
             ),
           ],
         ),

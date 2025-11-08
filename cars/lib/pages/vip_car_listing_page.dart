@@ -1,4 +1,3 @@
-// vip_car_listing_page.dart
 import 'package:flutter/material.dart';
 import 'car_listing_base.dart';
 

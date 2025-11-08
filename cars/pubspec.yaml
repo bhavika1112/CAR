@@ -30,3 +30,33 @@ flutter:
     - assets/View 6.png
     - assets/normal.png
     - assets/vip.png
+    - assets/vipseller.png
+
+     # Normal home brand images
+    - assets/home/image.png
+    - assets/home/hyundai.png
+    - assets/home/image-1.png
+    - assets/home/image-2.png
+    - assets/home/image-3.png
+    - assets/home/image-4.png
+    - assets/home/image-5.png
+    - assets/home/image-6.png
+    - assets/home/image 12.png
+    
+    # VIP home brand images
+    - assets/viphome/audi (1).png
+    - assets/viphome/image.png
+    - assets/viphome/image-1.png
+    - assets/viphome/image-2.png
+    - assets/viphome/image-3.png
+    - assets/viphome/image-4.png
+    - assets/viphome/bmw.png
+    - assets/viphome/image-5.png
+    - assets/viphome/image-6.png
+    - assets/viphome/image-7.png
+    - assets/viphome/image-8.png
+    - assets/viphome/image-9.png
+    - assets/viphome/image-10.png
+    - assets/viphome/image-11.png
+    - assets/viphome/image-12.png
+    
