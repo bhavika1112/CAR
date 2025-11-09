@@ -243,6 +243,7 @@ class _SplashScreenState extends State<SplashScreen> {
 }
 
 // Onboarding Screen
+// Onboarding Screen
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({Key? key}) : super(key: key);
 
@@ -266,14 +267,11 @@ class OnboardingScreen extends StatelessWidget {
             Container(
               color: const Color(0xFF2D1B29),
             ),
-            Opacity(
-              opacity: 0.1,
-              child: Container(
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage('assets/View 1.png'),
-                    fit: BoxFit.cover,
-                  ),
+            Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/pexels-garvin-st-villier-3311574 1.png'),
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
@@ -283,14 +281,7 @@ class OnboardingScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'Onboarding',
-                      style: GoogleFonts.inter(
-                        color: Colors.white70,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w300,
-                      ),
-                    ),
+                    
                     const Spacer(),
                     RichText(
                       text: TextSpan(
@@ -372,7 +363,6 @@ class OnboardingScreen extends StatelessWidget {
     );
   }
 }
-
 // Login Screen
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -397,14 +387,11 @@ class LoginScreen extends StatelessWidget {
             Container(
               color: const Color(0xFF2D1B29),
             ),
-            Opacity(
-              opacity: 0.1,
-              child: Container(
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage('assets/View 2.png'),
-                    fit: BoxFit.cover,
-                  ),
+            Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/login screen (2).png'),
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
@@ -414,13 +401,7 @@ class LoginScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'login screen',
-                      style: GoogleFonts.inter(
-                        color: Colors.grey,
-                        fontSize: 14,
-                      ),
-                    ),
+                    
                     const SizedBox(height: 60),
                     Text(
                       'Hello!',
@@ -670,14 +651,11 @@ class SignUpScreen extends StatelessWidget {
             Container(
               color: const Color(0xFF2D1B29),
             ),
-            Opacity(
-              opacity: 0.1,
-              child: Container(
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage('assets/View 3.png'),
-                    fit: BoxFit.cover,
-                  ),
+            Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/Sign Up Screen (1).png'),
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
@@ -687,13 +665,7 @@ class SignUpScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'Sign Up Screen',
-                      style: GoogleFonts.inter(
-                        color: Colors.grey,
-                        fontSize: 14,
-                      ),
-                    ),
+                    
                     const SizedBox(height: 40),
                     Text(
                       'Hello!',
@@ -888,14 +860,11 @@ class OTPScreen extends StatelessWidget {
             Container(
               color: const Color(0xFF2D1B29),
             ),
-            Opacity(
-              opacity: 0.1,
-              child: Container(
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage('assets/View 5.png'),
-                    fit: BoxFit.cover,
-                  ),
+            Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/OTP (1).png'),
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
@@ -905,13 +874,7 @@ class OTPScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'OTP',
-                      style: GoogleFonts.oswald(
-                        color: Colors.grey,
-                        fontSize: 32,
-                      ),
-                    ),
+                    
                     const SizedBox(height: 60),
                     Center(
                       child: Text(
@@ -935,32 +898,28 @@ class OTPScreen extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 60),
-                    Row(
+                                        Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: List.generate(
                         4,
                         (index) => Container(
-                          width: 60,
-                          height: 60,
+                          width: 70,
+                          height: 70,
                           decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(12),
-                            border: Border.all(color: Colors.grey.shade300),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black.withOpacity(0.1),
-                                blurRadius: 4,
-                                offset: const Offset(0, 2),
-                              ),
-                            ],
+                            color: Colors.white.withOpacity(0.2),
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(
+                              color: Colors.white.withOpacity(0.5),
+                              width: 2,
+                            ),
                           ),
                           child: Center(
                             child: Text(
-                              '',
+                              '1',
                               style: GoogleFonts.inter(
-                                fontSize: 24,
-                                color: Colors.black,
-                                fontWeight: FontWeight.w500,
+                                fontSize: 32,
+                                color: Colors.white,
+                                fontWeight: FontWeight.w600,
                               ),
                             ),
                           ),
@@ -1062,14 +1021,11 @@ class ChooseRoleScreen extends StatelessWidget {
             Container(
               color: const Color(0xFF2D1B29),
             ),
-            Opacity(
-              opacity: 0.1,
-              child: Container(
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage('assets/View 6.png'),
-                    fit: BoxFit.cover,
-                  ),
+            Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/Choose Role (1).png'),
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
@@ -1292,14 +1248,11 @@ class SellerRoleScreen extends StatelessWidget {
             Container(
               color: const Color(0xFF2D1B29),
             ),
-            Opacity(
-              opacity: 0.1,
-              child: Container(
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage('assets/normal.png'),
-                    fit: BoxFit.cover,
-                  ),
+            Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/normal.png'),
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
